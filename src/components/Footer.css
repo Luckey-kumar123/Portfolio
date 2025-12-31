@@ -1,0 +1,103 @@
+/* =========================
+   FOOTER BASE
+========================= */
+.footer {
+  width: 100%;
+  background: #020617;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   CONTENT WRAPPER (WIDTH INCREASED)
+========================= */
+.footer-content {
+  max-width: 1600px;          /* 👈 width increased */
+  margin: 0 auto;
+  padding: 28px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* =========================
+   TEXT
+========================= */
+.footer-text {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.footer-text span {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* =========================
+   LINKS (MODERN STYLE)
+========================= */
+.footer-links {
+  display: flex;
+  gap: 26px;
+}
+
+.footer-links a {
+  position: relative;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover color */
+.footer-links a:hover {
+  color: #38bdf8;
+}
+
+/* Animated underline */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   📱 TABLET
+========================= */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 24px 6%;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+}
+
+/* =========================
+   📱 MOBILE
+========================= */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}

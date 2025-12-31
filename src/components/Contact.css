@@ -1,0 +1,96 @@
+.contact-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* Subtitle */
+.contact-subtitle {
+  color: #cbd5f5;
+  margin-bottom: 40px;
+}
+
+/* Wrapper */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Form */
+.contact-form {
+  background: #020617;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e5e7eb;
+  outline: none;
+}
+
+/* Floating label */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: #020617;
+  padding: 0 6px;
+}
+
+/* Animation on focus */
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+  top: -8px;
+  font-size: 0.75rem;
+  color: #38bdf8;
+}
+
+/* Button */
+.contact-btn {
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* 📱 Mobile */
+/* ========================= */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 60px 6%;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+}
