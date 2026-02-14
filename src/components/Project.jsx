@@ -6,14 +6,31 @@ function Project() {
       <h2>Projects</h2>
   
       <div className="projects-grid">
-        <div className="project-card">
-          <h3>Job Learning Portal</h3>
-          <p>
-            A MERN stack platform that integrates job listings with skill-based
-            learning modules.
-          </p>
-          <span className="tech">MERN Stack</span>
-        </div>
+        <a
+            href="https://job-learning-portal4.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <div className="project-card">
+              <h3>Job Learning Portal</h3>
+              <p>
+                A MERN stack platform that integrates job listings with skill-based
+                learning modules.
+              </p>
+              <span className="tech">MERN Stack</span>
+            </div>
+          </a>
+
+
+            <div className="project-card">
+              <h3>E-Commerce Website</h3>
+              <p>
+              FullStack E-Commerce website is an online platform where users can browse products, add to cart, and purchase items online.
+              </p>
+              <span className="tech">MERN Stack</span>
+            </div>
+          
             
         <div className="project-card">
           <h3>Airbnb Clone</h3>

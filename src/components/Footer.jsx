@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p className="footer-text">
-          © 2025 <span>Luckey Kumar</span> | Full Stack Developer
+          © 2025 <span>Luckey Kumar</span> | FullStack MERN Stack Developer 
         </p>
 
         <div className="footer-links">
